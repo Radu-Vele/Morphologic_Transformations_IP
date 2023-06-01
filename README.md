@@ -11,12 +11,24 @@ The main libraries and tools used are:
 
 ### Dilation
 
+
+
 ### Erosion
+
+- the `lower` object (bottom) is the accumulator overlapped with the structuring element (builds the final result).
+- the `upper` object is a zoomed-in snapshot of the source object overlapped with the structuring element.
+
+- each time the center of the structuring element intersects an object pixel there are **2 frames** in the gif, and the upper object shows the outcome of the erosion in the current region.
+
+    1. first the center of the structuring element is colored in yellow
+    2. second, the center is colored either in red or in blue:
+        - `red` means the pixel is not kept in the result
+        - `blue` means the pixel is kept in the result
 
 ### Region Filling (found in `./outRegionFilling`)
 
 - **first** iteration: left = original, right = complemented
-- **intermmediary** iterations of the algorithm contains 3 frames:
+- **intermmediary** iterations of the algorithm contain 3 frames:
 
 |Step|Left Image Meaning|Right Image Meaning|
 |-|-|-|
