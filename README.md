@@ -1,4 +1,4 @@
-# Morphologic Transformations Visualizations
+# Morphologic Transformations Visualizations 🔲
 
 > This project contains a jupyter notebook with algorithms for visualizing some basic morphologic transformations such as **erosion**, **dilation**, and **region filling**. Besides the notebook, there are various input files and some resulted gifs. 
 
@@ -9,13 +9,13 @@ The main libraries and tools used are:
 
 ## Gifs Explanations
 
-### Dilation
+### Dilation (found in `./outDilation`)
 
 - in the `left part`, the `upper` object is a zoomed-in snapshot of the source object overlapped with the structuring element.
 - in the `left part`, the `lower` object is the structuring element.
 - in the `right part` there is the **accumulator** object overlapped with the structuring element (builds the final result).
 
-### Erosion
+### Erosion (found in `./outErosion`)
 
 - the `lower` object (bottom) is the accumulator overlapped with the structuring element (builds the final result).
 - the `upper` object is a zoomed-in snapshot of the source object overlapped with the structuring element.
@@ -30,7 +30,7 @@ The main libraries and tools used are:
 ### Region Filling (found in `./outRegionFilling`)
 
 - **first** iteration: left = original, right = complemented
-- **intermmediary** iterations of the algorithm contain 3 frames:
+- **intermmediary** iterations of the algorithm contain 4 frames:
 
 |Step|Left Image Meaning|Right Image Meaning|
 |-|-|-|
