@@ -11,7 +11,9 @@ The main libraries and tools used are:
 
 ### Dilation
 
-
+- in the `left part`, the `upper` object is a zoomed-in snapshot of the source object overlapped with the structuring element.
+- in the `left part`, the `lower` object is the structuring element.
+- in the `right part` there is the **accumulator** object overlapped with the structuring element (builds the final result).
 
 ### Erosion
 
